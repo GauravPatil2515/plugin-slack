@@ -61,7 +61,7 @@ import io.kestra.core.models.annotations.PluginProperty;
                     type: io.kestra.plugin.slack.app.chats.StartStream
                     token: "{{ secret('SLACK_TOKEN') }}"
                     channel: "#general"
-                    threadTs: "{{ outputs.post_message.timestamp }}"
+                    timestamp: "{{ outputs.post_message.timestamp }}"
                     markdownText: "Process details streaming..."
                 """
         ),
